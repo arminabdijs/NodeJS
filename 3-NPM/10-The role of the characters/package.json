@@ -1,0 +1,21 @@
+{
+  "name": "10-the-role-of-the-characters",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arminabdijs/node.JS.git"
+  },
+  "private": true,
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
+//^    ~    *
+//^ => the update MINOR and PATCH
+//* => the update MAJOR  and MINOR and PATCH
+//~ => the update PATCH

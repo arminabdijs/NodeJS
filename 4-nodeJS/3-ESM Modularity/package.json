@@ -1,0 +1,17 @@
+{
+  "name": "shop",
+  "version": "1.0.0",
+  "description": "digikala shop",
+  "homepage": "https://github.com/arminabdijs/node.JS#readme",
+  "bugs": {
+    "url": "https://github.com/arminabdijs/node.JS/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arminabdijs/node.JS.git"
+  },
+  "keywords": [],
+  "author": "Armin Abdi",
+  "license": "MIT",
+  "type": "commonjs"
+}

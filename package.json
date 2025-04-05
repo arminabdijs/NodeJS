@@ -1,0 +1,33 @@
+{
+  "name": "shop",
+  "version": "1.0.0",
+  "description": "digikala shop",
+  "homepage": "https://github.com/arminabdijs/node.JS#readme",
+  "bugs": {
+    "url": "https://github.com/arminabdijs/node.JS/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arminabdijs/node.JS.git"
+  },
+  "license": "MIT",
+  "author": "Armin Abdi",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "fastest-validator": "^1.19.0",
+    "mongodb": "^6.13.1",
+    "mongoose": "^8.10.1",
+    "nodemon": "^3.1.9"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@types/node": "^22.13.4"
+  }
+}

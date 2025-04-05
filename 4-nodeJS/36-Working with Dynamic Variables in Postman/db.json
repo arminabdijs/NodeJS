@@ -1,0 +1,113 @@
+{
+  "users": [
+    {
+      "id": "9ed36953-eb2c-4e3c-8549-f927b53c67b3",
+      "name": "John Doe",
+      "username": "John_Doe",
+      "password": "12345678",
+      "email": "john121@gmail.com",
+      "address": "123 Main St",
+      "phone": "989185467382",
+      "crime": 900000,
+      "role": "ADMIN"
+    },
+    {
+      "id": "0482770c-f934-417f-b85c-310633677684",
+      "name": "Alice Johnson",
+      "username": "Alice_Johnson",
+      "password": "12345678",
+      "email": "alice121@gmail.com",
+      "address": "789 Oak St",
+      "phone": "989395678210",
+      "crime": 50000,
+      "role": "USER"
+    },
+    {
+      "id": "1447905e-175d-461e-8c21-042f14878b53",
+      "name": "Bob Brown",
+      "username": "Bob_Brown",
+      "password": "12345678",
+      "email": "bob121@gmail.com",
+      "address": "321 Maple St",
+      "phone": "989654789012",
+      "crime": 70000,
+      "role": "USER"
+    },
+    {
+      "id": "04757763-1169-4a51-8672-c341f99c73d6",
+      "name": "Charlie Davis",
+      "username": "Charlie_Davis",
+      "password": "12345678",
+      "email": "charlie121@gmail.com",
+      "address": "654 Willow St",
+      "phone": "989876543210",
+      "crime": 20000,
+      "role": "USER"
+    },
+    {
+      "id": "9c67286a-2951-4975-89b2-689570443891",
+      "name": "David Wilson",
+      "username": "David_Wilson",
+      "password": "12345678",
+      "email": "david121@gmail.com",
+      "address": "987 Pine St",
+      "phone": "989987654321",
+      "crime": 20000,
+      "role": "ADMIN"
+    },
+    {
+      "id": "360431b1-c012-4310-9584-813410861879",
+      "name": "Jane Smith",
+      "username": "Jane_Smith",
+      "password": "12345678",
+      "email": "jane121@gmail.com",
+      "address": "456 Elm St",
+      "phone": "989214568392",
+      "crime": 0,
+      "role": "USER"
+    },
+    {
+      "id": "df265e50-b294-4ad9-8330-143d0ab6e829",
+      "name": "armin abdi",
+      "username": "arminabdiJS",
+      "email": "arminabdiJS@gmail.com",
+      "address": "ksdjbgjklsdhglksd",
+      "phone": "98921238952",
+      "password": "2394937cjodhf",
+      "crime": 20000,
+      "role": "USER"
+    }
+  ],
+  "books": [
+    {
+      "id": "2d296f93-75ec-45b4-b777-e61de734d071",
+      "title": "Ruth Olson",
+      "author": "Jessie Kutch",
+      "price": 229.06,
+      "free": 1
+    },
+    {
+      "id": "f8551542-51a4-4498-b3cd-016ebf402c47",
+      "title": "Marlon Hudson",
+      "author": "Miss Enrique Considine",
+      "price": 383.02,
+      "free": 1
+    },
+    {
+      "id": "cca18eff-0559-4f29-aaea-b475cec8d0c9",
+      "title": "Kimberly Batz",
+      "author": "Ian Hilpert",
+      "price": 938.17,
+      "free": 1
+    }
+  ],
+  "rents": [
+    {
+      "id": "6962fea4-5728-49c1-98ec-36ad7f20d393",
+      "userID": "9ed36953-eb2c-4e3c-8549-f927b53c67b3",
+      "bookID": "d0fd8711-9297-40be-a4d8-2dac1f8cc672",
+      "startDate": "2024-12-16",
+      "endDate": "2025-01-25"
+    }
+  ]
+}

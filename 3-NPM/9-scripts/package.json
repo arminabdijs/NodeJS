@@ -1,0 +1,20 @@
+{
+  "name": "9-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run scripts": [
+      "npm run-script teat",
+      "npm run test"
+    ],
+    "index": "node ./index.js",
+    "for run commind index": "npm run index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arminabdijs/node.JS.git"
+  },
+  "private": true
+}

@@ -1,0 +1,32 @@
+{
+  "name": "shop",
+  "version": "1.0.0",
+  "description": "digikala shop",
+  "homepage": "https://github.com/arminabdijs/node.JS#readme",
+  "bugs": {
+    "url": "https://github.com/arminabdijs/node.JS/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arminabdijs/node.JS.git"
+  },
+  "license": "MIT",
+  "author": "Armin Abdi",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  },
+  "devDependencies": {
+    "bootstrap": "^5.3.3"
+  },
+  "messages": {
+    "message": "To install a development package, we use the following comment",
+    "command": "npm install <package_name> --save-dev ",
+    "command2": "npm i express -D === npm i express --save-dev"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": 1,
+  "name": "Armin Abdi",
+  "age": 25,
+  "email": "armin@gmail.com",
+  "users": [
+    "armin",
+    "amin",
+    "amir",
+    "qadir"
+  ],
+  "mode": "Development",
+  "version": "1.2.0"
+}

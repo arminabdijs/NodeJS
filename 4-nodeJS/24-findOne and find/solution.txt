@@ -1,0 +1,9 @@
+User(entity):
+    1.User --> Register✔️, login✔️, Reserve✔️, Logout, delivery,get all book✔️
+    2.Admin --> crime✔️, MakeAdmin✔️, Add Book✔️, remove book✔️,edit book✔️ , get all books✔️
+
+
+
+
+book:
+    add book✔️, remove book✔️, edit book✔️

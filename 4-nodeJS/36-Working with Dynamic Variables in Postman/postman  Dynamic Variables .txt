@@ -1,0 +1,9 @@
+
+{
+    "title": "{{$randomFullName}}",
+    "author":"{{$randomFullName}}",
+    "price":{{$randomPrice}}
+}
+
+https://learning.postman.com/docs/writing-scripts/script-references/variables-list/
+

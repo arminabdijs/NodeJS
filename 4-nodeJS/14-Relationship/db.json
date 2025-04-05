@@ -1,0 +1,164 @@
+{
+  "users": [
+    {
+      "id": "9ed36953-eb2c-4e3c-8549-f927b53c67b3",
+      "name": "John Doe",
+      "username": "John_Doe",
+      "password": "12345678",
+      "email": "john121@gmail.com",
+      "address": "123 Main St",
+      "phone": "989185467382",
+      "crime": 900000,
+      "role": "USER"
+    },
+    {
+      "id": "0482770c-f934-417f-b85c-310633677684",
+      "name": "Alice Johnson",
+      "username": "Alice_Johnson",
+      "password": "12345678",
+      "email": "alice121@gmail.com",
+      "address": "789 Oak St",
+      "phone": "989395678210",
+      "crime": 50000,
+      "role": "USER"
+    },
+    {
+      "id": "1447905e-175d-461e-8c21-042f14878b53",
+      "name": "Bob Brown",
+      "username": "Bob_Brown",
+      "password": "12345678",
+      "email": "bob121@gmail.com",
+      "address": "321 Maple St",
+      "phone": "989654789012",
+      "crime": 70000,
+      "role": "USER"
+    },
+    {
+      "id": "04757763-1169-4a51-8672-c341f99c73d6",
+      "name": "Charlie Davis",
+      "username": "Charlie_Davis",
+      "password": "12345678",
+      "email": "charlie121@gmail.com",
+      "address": "654 Willow St",
+      "phone": "989876543210",
+      "crime": 20000,
+      "role": "USER"
+    },
+    {
+      "id": "9c67286a-2951-4975-89b2-689570443891",
+      "name": "David Wilson",
+      "username": "David_Wilson",
+      "password": "12345678",
+      "email": "david121@gmail.com",
+      "address": "987 Pine St",
+      "phone": "989987654321",
+      "role": "ADMIN"
+    },
+    {
+      "id": "360431b1-c012-4310-9584-813410861879",
+      "name": "Jane Smith",
+      "username": "Jane_Smith",
+      "password": "12345678",
+      "email": "jane121@gmail.com",
+      "address": "456 Elm St",
+      "phone": "989214568392",
+      "crime": 0,
+      "role": "USER"
+    }
+  ],
+  "books": [
+    {
+      "id": "d5716366-199a-4942-9f09-9dd3b530f1c8",
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "publication_year": 1937,
+      "genre": "Fantasy",
+      "price": "160000$",
+      "free": 0
+    },
+    {
+      "id": "00de55b2-276f-444c-be7a-09e3091854be",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "publication_year": 1925,
+      "genre": "Fiction",
+      "price": "200000$",
+      "free": 1
+    },
+    {
+      "id": "0d8de68e-eaf2-4aad-85fc-c1ff262a9d13",
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "publication_year": 1951,
+      "genre": "Fiction",
+      "price": "160000$",
+      "free": 1
+    },
+    {
+      "id": "844465ca-1762-4179-ba39-7ba5ac6d7b96",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "publication_year": 1960,
+      "genre": "Fiction",
+      "price": "140000$",
+      "free": 0
+    },
+    {
+      "id": "b1d461a4-3262-41f5-928e-ebc1023264b3",
+      "title": "1984",
+      "author": "George Orwell",
+      "publication_year": 1949,
+      "genre": "Dystopian",
+      "price": "180000$",
+      "free": 1
+    },
+    {
+      "id": "9e5603d2-49d8-4694-8415-cab388d2eb8f",
+      "title": "The Silmarillion",
+      "author": "J.R.R. Tolkien",
+      "publication_year": 1977,
+      "genre": "Fantasy",
+      "price": "250000$",
+      "free": 0
+    },
+    {
+      "id": "4444dafb-7940-49fa-94bf-e2b747189386",
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "publication_year": 1937,
+      "genre": "Fantasy",
+      "price": "200000$",
+      "free": 1
+    },
+    {
+      "id": "f1feee11-effb-4c48-a42b-ef223e532937",
+      "title": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "publication_year": 1954,
+      "genre": "Fantasy",
+      "price": "280000$",
+      "free": 0
+    }
+  ],
+  "rents": [
+    {
+      "id": "12345678901234567890",
+      "book_id": "d5716366-199a-4942-9f09-9dd3b530f1c8",
+      "user_id": "9ed36953-eb2c-4e3c-8549-f927b53c67b3",
+      "start_date": "2022-01-01",
+      "end_date": "2022-01-15"
+    },
+    {
+      "id": "23456789012345678901",
+      "book_id": "0d8de68e-eaf2-4aad-85fc-c1ff262a9d13",
+      "user_id": "9ed36953-eb2c-4e3c-8549-f927b53c67b3",
+      "start_date": "2022-01-16",
+      "end_date": "2022-01-25"
+    }
+  ]
+}
+
+//For example, in a library where we have a block for users and a block for books,
+//we should also have a block for the relationship between the two,
+//which will have an ID of the user who has borrowed a book and an ID of the borrowed book,
+//and it will have a start and end time.
