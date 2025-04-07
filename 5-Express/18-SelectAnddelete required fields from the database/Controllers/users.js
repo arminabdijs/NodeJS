@@ -1,5 +1,5 @@
-const usersModel = require("../models/users");
 const { isValidObjectId } = require("mongoose");
+const usersModel = require("../models/users");
 const registerUserValidator = require("../Validators/registerUserValidator");
 const checkLogin = require("../Validators/loginValidator");
 
@@ -96,9 +96,23 @@ exports.loginUser = async (req, res) => {
         .json({ message: "username، email or phone required" });
     }
 
+    /* const finderUser = await usersModel.findOne(
+      {
+        $or: [{ username }, { email }, { phone }],
+      },
+      "name username email address phone crime password"
+    ); */
+
+    /* const finderUser = await usersModel.findOne(
+      {
+        $or: [{ username }, { email }, { phone }],
+      },
+      "-_id -__v"
+    ); */
+
     const finderUser = await usersModel.findOne({
       $or: [{ username }, { email }, { phone }],
-    });
+    }).select("name username email address phone crime password")
 
     if (!finderUser) {
       return res.status(404).json({ message: "user not found" });
@@ -108,17 +122,9 @@ exports.loginUser = async (req, res) => {
       return res.status(401).json({ message: "wrong password" });
     }
 
-    console.log(finderUser);
-
     res.status(200).json({
       message: "Login Successfully",
-      user: {
-        name: finderUser.name,
-        username: finderUser.username,
-        email: finderUser.email,
-        address: finderUser.address,
-        phone: finderUser.phone,
-      },
+      user: finderUser,
     });
   } catch (err) {
     res.status(500).json(err);

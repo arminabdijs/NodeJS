@@ -1,6 +1,6 @@
 const express = require("express");
-const { isValidObjectId } = require("mongoose");
 const usersModel = require("../models/Users");
+const { isValidObjectId } = require("mongoose");
 const registerUserValidator = require("../Validators/registerUserValidator");
 const checkLogin = require("../Validators/loginValidator");
 
@@ -39,7 +39,7 @@ usersRouter.delete("/:id", async (req, res) => {
   try {
     const { id } = req.params;
     if (isValidObjectId(id)) {
-      const finderUser = await usersModel.findByIdAndDelete(id);
+      const finderUser = await usersModel.findByIdAndDelete(id)
       if (!finderUser) {
         return res.status(404).json({ message: "User Not Found" });
       }

@@ -1,5 +1,5 @@
-const usersModel = require("../models/users");
 const { isValidObjectId } = require("mongoose");
+const usersModel = require("../models/users");
 const registerUserValidator = require("../Validators/registerUserValidator");
 const checkLogin = require("../Validators/loginValidator");
 

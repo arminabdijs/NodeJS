@@ -17,14 +17,15 @@ app.delete("/api/users/:id", async (req, res) => {
   const { id } = req.params;
 
   if (isValidObjectId(id)) {
-    const deletedUser = await usersModel.findByIdAndDelete({ _id: id });
+    // .lean() in Mongoose converts the query output into a simple object, making processing faster, lighter, and without the additional Document capabilities.
+    const deletedUser = await usersModel.findByIdAndDelete({ _id: id }).lean();
 
     if (!deletedUser) {
       return res.status(404).json({ message: "There is not user !!" });
     }
 
     res.status(200).json({ message: "user deleted successfully😊" });
-  }else{
+  } else {
     return res.status(422).json({ message: "userID is not valid" });
   }
 });
