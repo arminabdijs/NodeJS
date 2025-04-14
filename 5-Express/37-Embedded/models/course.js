@@ -21,9 +21,7 @@ module.exports = mongoose.model("course", courseSchema);
 // reference Data Model
 /* {
   "title": "Node.js",
-  "teacher": {
-    "$oid": "67f4c50d9757477619157b0b"
-  },
+  "teacher": "67f4c50d9757477619157b0b",
   "__v": 0
 } */
 
@@ -31,7 +29,8 @@ module.exports = mongoose.model("course", courseSchema);
 /* {
   "title": "Node.js",
   "teacher": {
-    "fullname": "John Doe"
+    "fullname": "John Doe",
+    "__v": 0
   },
   "__v": 0
 } */

@@ -19,26 +19,20 @@ const removeEmptyFields = (option) => {
     return next();
   };
 };
-fetch("http://localhost:3000/api/users", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({
-    name:"armion",
-     email:"arminabdi@gmail.com",
-     username:"arminabdiJS",
-     password:"1212121212",
-     confirmPassword:"1212121212",
-     phone:"+9809218967662",
-     address:"Javanrud",
-     
-  }),
-});
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(helmet());
 app.use(removeEmptyFields({omitZero:true}));
+//This imports the CORS middleware, which allows your server to handle Cross-Origin Resource Sharing—enabling or restricting requests from different origins.
 app.use(cors());
+
+app.use(cors({
+  origin: "http://example.com", // فقط این دامنه مجاز است
+  methods: ["GET", "POST"],     // فقط این متدها مجازند
+  credentials: true             // اگر کوکی یا اطلاعات لاگین نیاز دارید
+}));
 app.use("/api/users", usersRouter);
 app.use("/api/books", booksRouter);
 app.use("/api/books", rentsRouter);

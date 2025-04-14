@@ -1,0 +1,11 @@
+html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+div{
+    color: #081D43;
+}

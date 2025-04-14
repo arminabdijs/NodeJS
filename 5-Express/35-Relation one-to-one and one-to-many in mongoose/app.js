@@ -24,7 +24,7 @@ app.get("/", async(req, res) => {
     message: "New teacher created",
   }); */
 
-  await courseModel.create({title:"Angular",teacher:"67f4c50d9757477619157b0b"});
+  await courseModel.create({title:"Angular",teacher:"67f9eef8606dd34db4013963"});
 
   res.json({
     message: "New course created",

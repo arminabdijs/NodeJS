@@ -21,6 +21,7 @@ const removeEmptyFields = (option) => {
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+// helmet() adds security-related HTTP headers to protect your Express app from common web vulnerabilities.
 app.use(helmet());
 app.use(removeEmptyFields({omitZero:true}));
 

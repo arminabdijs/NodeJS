@@ -5,7 +5,6 @@ const usersRouter = require("./routes/usersRouter");
 const booksRouter = require("./routes/booksRouter");
 const rentsRouter = require("./routes/rentsRouter");
 const cursesRouter = require('./routes/coursesRouter');
-// const _ = require('./routes/');
 const viewsPath = require("./utils/path");
 
 
